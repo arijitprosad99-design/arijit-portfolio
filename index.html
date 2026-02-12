@@ -1,217 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arijit Prosad | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arijit Prosad | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <h2 class="logo">Arijit Portfolio</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#details">Details</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Technical</a></li>
-        <li><a href="#certificate">Certificate</a></li>
-        <li><a href="#download">Download</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="hero">
+    <img src="arijit.jpg" alt="Arijit Prosad">
+    <h1>Arijit Prosad</h1>
+    <p><span class="typing"></span></p>
+    <a href="Arijit_prosad.pdf" class="btn" download>Download CV</a>
+</header>
 
-  <!-- Home -->
-  <section id="home" class="home">
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#technical">Technical</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <div class="home-img">
-      <img src="myphoto.jpg" alt="Arijit Prosad Photo">
-    </div>
-
-    <div class="home-text">
-      <h1>Arijit Prosad</h1>
-      <h3>Diploma Student - Food Processing and Technology</h3>
-
-      <p>
-        Malda Polytechnic | 4th Semester <br>
-        Future Food Processing Technologist
-      </p>
-
-      <div class="btn-group">
-        <a href="cv.pdf" download class="btn">Download CV</a>
-        <a href="internship-report.pdf" download class="btn btn2">Internship Report</a>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about">
+<section id="about" class="fade">
     <h2>About Me</h2>
-
-    <p>
-      Hello! My name is <b>Arijit Prosad</b>. I am a student of
-      <b>Food Processing and Technology</b>. Currently I am studying at
-      <b>Malda Polytechnic</b> in <b>4th Semester</b>.
-    </p>
-
-    <p>
-      I am interested in Web Development and I love creating modern and responsive websites.
-      I am hardworking and always ready to learn new skills.
-    </p>
-
-    <h3>My Hobbies</h3>
-    <ul>
-      <li>🏏 Playing Cricket</li>
-      <li>🏸 Playing Badminton</li>
-    </ul>
-  </section>
-
-  <!-- Personal Details -->
-  <section id="details" class="details">
-    <h2>Personal Details</h2>
-
-    <div class="details-box">
-      <p><b>Name:</b> Arijit Prosad</p>
-      <p><b>Father's Name:</b> Nirmal Prosad</p>
-      <p><b>Date of Birth:</b> 20-July-2006</p>
-      <p><b>Nationality:</b> Indian</p>
-      <p><b>Religion:</b> Hinduism</p>
-      <p><b>Gender:</b> Male</p>
-      <p><b>Category:</b> OBC-B</p>
-      <p><b>Marital Status:</b> Unmarried</p>
-
-      <p><b>Village:</b> Sarkarpara</p>
-      <p><b>P.O:</b> Bulbulchandi</p>
-      <p><b>P.S:</b> Habibpur</p>
-      <p><b>District:</b> Malda</p>
-      <p><b>Pin:</b> 732122</p>
-
-      <p><b>Mobile No:</b> 8653135381</p>
-      <p><b>Email:</b> arijitprosad99@gmail.com</p>
-
-      <p><b>Language Known:</b> Bengali, English, Hindi</p>
-      <p><b>Professional Preference:</b> Food Processing Technologist</p>
+    <div class="card">
+        <p>
+            I am Arijit Prosad, pursuing Diploma in Food Processing 
+            Technology at Malda Polytechnic. My goal is to become a 
+            professional Food Processing Technologist and continuously 
+            upgrade my technical knowledge and skills.
+        </p>
     </div>
-  </section>
+</section>
 
-  <!-- Education -->
-  <section id="education" class="education">
-    <h2>Educational Qualification</h2>
+<section id="education" class="fade">
+    <h2>Education</h2>
 
-    <div class="table-box">
-      <table>
-        <tr>
-          <th>Name of Exam</th>
-          <th>Passing Year</th>
-          <th>Board / University</th>
-          <th>Percentage</th>
-        </tr>
-        <tr>
-          <td>Secondary</td>
-          <td>2022</td>
-          <td>W.B.B.S.E</td>
-          <td>40.1%</td>
-        </tr>
-        <tr>
-          <td>Higher Secondary</td>
-          <td>2024</td>
-          <td>W.B.C.H.S.E</td>
-          <td>81.2%</td>
-        </tr>
-      </table>
+    <div class="card">
+        <h3>Higher Secondary (2024)</h3>
+        <p>W.B.C.H.S.E | 81.2%</p>
     </div>
 
-    <h2 style="margin-top:40px;">Technical Qualification</h2>
+    <div class="card">
+        <h3>Secondary (2022)</h3>
+        <p>W.B.B.S.E | 41.1%</p>
+    </div>
+</section>
 
-    <div class="table-box">
-      <table>
-        <tr>
-          <th>Institute</th>
-          <th>Passing Year</th>
-          <th>Semester</th>
-          <th>G.P.A</th>
-        </tr>
-        <tr>
-          <td>Malda Polytechnic</td>
-          <td>2027</td>
-          <td>2nd Semester</td>
-          <td>4.6</td>
-        </tr>
-      </table>
+<section id="technical" class="fade">
+    <h2>Technical Qualification</h2>
+
+    <div class="card">
+        <h3>Diploma in Food Processing Technology</h3>
+        <p>Malda Polytechnic</p>
+        <p>2nd Year | GPA: 4.6</p>
+        <p>Expected Year of Completion: 2027</p>
     </div>
 
-    <div class="extra-info">
-      <p><b>Computer Exposure:</b> Diploma and Training on Basic Computer Skills for One Year</p>
-      <p><b>Company Training:</b> Yet to be completed Internship for 15 days at Keventer Argo Limited</p>
+    <div class="card">
+        <h3>Industrial Training</h3>
+        <p>Keventer Agro Limited</p>
+        <p>Training Successfully Completed</p>
     </div>
-  </section>
+</section>
 
-  <!-- Skills -->
-  <section id="skills" class="skills">
-    <h2>Technical Skills</h2>
+<section id="certificates" class="fade">
+    <h2>Certificates</h2>
 
-    <div class="skill-box">
-      <h3>HTML</h3>
-      <div class="bar"><span class="html"></span></div>
-    </div>
-
-    <div class="skill-box">
-      <h3>CSS</h3>
-      <div class="bar"><span class="css"></span></div>
+    <div class="card">
+        <h3>Keventer Industrial Training Certificate</h3>
+        <a href="Keventer_Certificate.pdf" class="btn" target="_blank">View Certificate</a>
     </div>
 
-    <div class="skill-box">
-      <h3>JavaScript</h3>
-      <div class="bar"><span class="js"></span></div>
+    <div class="card">
+        <h3>Computer Course Certificate</h3>
+        <a href="Computer_Course_Certificate.pdf" class="btn" target="_blank">View Certificate</a>
     </div>
-  </section>
+</section>
 
-  <!-- Certificate -->
-  <section id="certificate" class="certificate">
-    <h2>Internship Certificate</h2>
-    <p>My Internship Certificate:</p>
+<section id="contact" class="fade">
+    <h2>Contact</h2>
 
-    <div class="certificate-img">
-      <img src="certificate.jpg" alt="Internship Certificate">
+    <div class="card">
+        <p>Email: <a href="mailto:arijitprosad99@gmail.com">arijitprosad99@gmail.com</a></p>
+        <p>Mobile: 8653135381</p>
+
+        <div class="social">
+            <a href=https://www.instagram.com/arijitprosad?igsh=dzFqZnRmZW9kY25p</a>
+            
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- Download -->
-  <section id="download" class="download">
-    <h2>Download Documents</h2>
+<footer>
+    <p>© 2026 Arijit Prosad| All Rights Reserved</p>
+</footer>
 
-    <div class="download-box">
-      <a href="cv.pdf" download class="btn">📄 Download CV</a>
-      <a href="internship-report.pdf" download class="btn btn2">📑 Download Internship Report</a>
-    </div>
-  </section>
+<!-- TYPING ANIMATION SCRIPT -->
+<script>
+const textArray = [
+"Future Food Technologist",
+"Diploma Student - Food Processing Technology",
+"Industrial Training Completed at Keventer",
+"Passionate About Food Innovation"
+];
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
+let typingElement = document.querySelector(".typing");
+let textIndex = 0;
+let charIndex = 0;
 
-    <div class="contact-info">
-      <p><b>Name:</b> Arijit Prosad</p>
-      <p><b>Email:</b> arijitprosad99@gmail.com</p>
-      <p><b>Phone:</b> 8653135381</p>
+function typeEffect() {
+    if (charIndex < textArray[textIndex].length) {
+        typingElement.textContent += textArray[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeEffect, 80);
+    } else {
+        setTimeout(eraseEffect, 1500);
+    }
+}
 
-      <p><b>Instagram:</b>
-        <a href="https://www.instagram.com/arijitprosad?igsh=dzFqZnRmZW9kY" target="_blank">
-          @arijitprosad
-        </a>
-      </p>
-    </div>
-  </section>
+function eraseEffect() {
+    if (charIndex > 0) {
+        typingElement.textContent = textArray[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(eraseEffect, 40);
+    } else {
+        textIndex++;
+        if (textIndex >= textArray.length) textIndex = 0;
+        setTimeout(typeEffect, 300);
+    }
+}
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Arijit Prosad | All Rights Reserved</p>
-  </footer>
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(typeEffect, 500);
+});
+</script>
+
+<!-- SCROLL FADE ANIMATION -->
+<script>
+const faders = document.querySelectorAll(".fade");
+
+window.addEventListener("scroll", () => {
+    faders.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            section.classList.add("show");
+        }
+    });
+});
+</script>
 
 </body>
   </html>

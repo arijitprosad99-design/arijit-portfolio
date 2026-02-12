@@ -1,88 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arijit Prosad | CV Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arijit Prosad | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Main Profile Section -->
-  <div class="container" id="home">
-    
-    <div class="profile">
-      <img src="profile.jpg" alt="Arijit Prosad" class="profile-img">
-      <h1>Arijit Prosad</h1>
-      <p>Diploma Student | Food Processing Technology</p>
-      <p>Malda Polytechnic College | 4th Semester</p>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Arijit Portfolio</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificate">Certificate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <a href="resume.pdf" class="btn" download>Download CV</a>
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-text">
+      <h1>Hello, I'm <span>Arijit Prosad</span></h1>
+      <p>
+        I am a student of <b>Food Processing and Technology</b>.
+        I also love learning <b>Web Development</b> and making websites using HTML & CSS.
+      </p>
+      <a href="#contact" class="btn">Contact Me</a>
     </div>
 
-    <!-- Menu Buttons -->
-    <div class="menu">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#technical">Technical</a>
-      <a href="#contact">Contact</a>
+    <div class="home-img">
+      <img src="myphoto.jpg" alt="Arijit Photo">
     </div>
-  </div>
+  </section>
 
   <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      Hello! My name is <b>Arijit Prosad</b>. I am a Diploma student in 
-      <b>Food Processing Technology</b> at <b>Malda Polytechnic College</b>. 
-      I am hardworking, sincere and eager to learn new skills.
+      My name is <b>Arijit Prosad</b>. I am a student of <b>Food Processing and Technology</b>.
+      Currently, I am studying at <b>Malda Polytechnic</b> in <b>4th Semester</b>.
     </p>
-  </section>
 
-  <!-- Education Section -->
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><b>Secondary (10th):</b> WBBSE (2022) - 40.1%</li>
-      <li><b>Higher Secondary (12th):</b> WBCHSE (2024) - 81.2%</li>
-      <li><b>Diploma:</b> Food Processing Technology, Malda Polytechnic College (4th Semester)</li>
-    </ul>
-  </section>
-
-  <!-- Technical Section -->
-  <section id="technical" class="section">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Basic Computer Skills</li>
-      <li>MS Word / Excel / PowerPoint</li>
-      <li>HTML, CSS (Beginner)</li>
-      <li>Food Processing Knowledge</li>
-    </ul>
-
-    <h3>Internship</h3>
     <p>
-      Completed project training at <b>Keventer Agro Limited</b> in 
-      <b>Appy Fizz Section</b> (8 Oct 2025 - 25 Oct 2025).
+      I am interested in learning web development and I love creating beautiful and responsive websites.
+      I want to improve my skills and build my career in the technology field.
     </p>
+
+    <h3>My Hobbies</h3>
+    <ul>
+      <li>🏏 Playing Cricket</li>
+      <li>🏸 Playing Badminton</li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill-box">
+      <h3>HTML</h3>
+      <div class="bar"><span class="html"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>CSS</h3>
+      <div class="bar"><span class="css"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>JavaScript</h3>
+      <div class="bar"><span class="js"></span></div>
+    </div>
+  </section>
+
+  <!-- Certificate Section -->
+  <section id="certificate" class="certificate">
+    <h2>Internship Certificate</h2>
+    <p>This is my internship certificate:</p>
+
+    <div class="certificate-img">
+      <img src="certificate.jpg" alt="Internship Certificate">
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p><b>Email:</b> arijitprosad99@gmail.com</p>
-    <p><b>Phone:</b> +91 8653135381</p>
-    <p><b>Instagram:</b> 
-      <a href="https://www.instagram.com/arijitprosad?igsh=dzFqZnRmZW9kY25p" target="_blank">
-        @arijitprosad
-      </a>
-    </p>
-    <p><b>Address:</b> Sarkarpara, Bulbulchandi, Habibpur, Malda - 732122</p>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-info">
+      <p><b>Name:</b> Arijit Prosad</p>
+      <p><b>Course:</b> Food Processing and Technology</p>
+      <p><b>College:</b> Malda Polytechnic</p>
+      <p><b>Semester:</b> 4th Semester</p>
+
+      <p><b>Email:</b> yourmail@gmail.com</p>
+      <p><b>Phone:</b> +91XXXXXXXXXX</p>
+
+      <p><b>Instagram:</b>
+        <a href="https://www.instagram.com/arijitprosad?igsh=dzFqZnRmZW9kY" target="_blank">
+          arijitprosad
+        </a>
+      </p>
+    </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2026 Arijit Prosad | CV Website</p>
+    <p>© 2026 Arijit Prosad | All Rights Reserved</p>
   </footer>
 
 </body>
-  </html>
+    </html>

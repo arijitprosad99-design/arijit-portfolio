@@ -1,149 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arijit Prosad | Personal Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arijit Prosad | CV Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <h2 class="logo">Arijit Prosad</h2>
-
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#internship">Internship</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Home -->
-  <section id="home" class="home">
-    <div class="home-content">
-      <img src="profile.jpg" alt="Arijit Prosad Photo" class="profile-pic">
-
-      <h1>Hello, I'm <span>Arijit Prosad</span></h1>
+  <!-- Main Profile Section -->
+  <div class="container" id="home">
+    
+    <div class="profile">
+      <img src="profile.jpg" alt="Arijit Prosad" class="profile-img">
+      <h1>Arijit Prosad</h1>
       <p>Diploma Student | Food Processing Technology</p>
       <p>Malda Polytechnic College | 4th Semester</p>
 
-      <div class="buttons">
-        <a href="#contact" class="btn">Contact Me</a>
-        <a href="resume.pdf" target="_blank" class="btn btn2">Download CV</a>
-      </div>
+      <a href="resume.pdf" class="btn" download>Download CV</a>
     </div>
-  </section>
 
-  <!-- About -->
+    <!-- Menu Buttons -->
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#technical">Technical</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
   <section id="about" class="section">
     <h2>About Me</h2>
-
     <p>
-      My name is <b>Arijit Prosad</b>. I am a Diploma student of 
-      <b>Food Processing Technology</b> at <b>Malda Polytechnic College</b>.  
-      Currently, I am studying in <b>4th Semester</b>.  
-      I am hardworking, sincere, and always eager to learn new things.
+      Hello! My name is <b>Arijit Prosad</b>. I am a Diploma student in 
+      <b>Food Processing Technology</b> at <b>Malda Polytechnic College</b>. 
+      I am hardworking, sincere and eager to learn new skills.
     </p>
-
-    <div class="about-details">
-      <div class="info-card">
-        <h3>Personal Details</h3>
-        <p><b>Father's Name:</b> Nirmal Prosad</p>
-        <p><b>Date of Birth:</b> 20 July 2006</p>
-        <p><b>Nationality:</b> Indian</p>
-        <p><b>Gender:</b> Male</p>
-        <p><b>Category:</b> OBC-B</p>
-        <p><b>Marital Status:</b> Unmarried</p>
-        <p><b>Religion:</b> Hinduism</p>
-        <p><b>Languages:</b> Bengali, English, Hindi</p>
-      </div>
-
-      <div class="info-card">
-        <h3>Career Objective</h3>
-        <p>
-          Willing to pursue a career as a <b>Food Processing Technologist</b> 
-          and grow my professional skills through learning and experience.
-        </p>
-      </div>
-    </div>
   </section>
 
-  <!-- Education -->
+  <!-- Education Section -->
   <section id="education" class="section">
     <h2>Education</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Secondary (10th)</h3>
-        <p><b>Board:</b> W.B.B.S.E</p>
-        <p><b>Passing Year:</b> 2022</p>
-        <p><b>Percentage:</b> 40.1%</p>
-      </div>
-
-      <div class="card">
-        <h3>Higher Secondary (12th)</h3>
-        <p><b>Board:</b> W.B.C.H.S.E</p>
-        <p><b>Passing Year:</b> 2024</p>
-        <p><b>Percentage:</b> 81.2%</p>
-      </div>
-
-      <div class="card">
-        <h3>Diploma</h3>
-        <p><b>Institute:</b> Malda Polytechnic College</p>
-        <p><b>Course:</b> Food Processing Technology</p>
-        <p><b>Semester:</b> 4th</p>
-        <p><b>Expected Passing:</b> 2027</p>
-      </div>
-    </div>
+    <ul>
+      <li><b>Secondary (10th):</b> WBBSE (2022) - 40.1%</li>
+      <li><b>Higher Secondary (12th):</b> WBCHSE (2024) - 81.2%</li>
+      <li><b>Diploma:</b> Food Processing Technology, Malda Polytechnic College (4th Semester)</li>
+    </ul>
   </section>
 
-  <!-- Internship -->
-  <section id="internship" class="section">
-    <h2>Internship / Training</h2>
+  <!-- Technical Section -->
+  <section id="technical" class="section">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Basic Computer Skills</li>
+      <li>MS Word / Excel / PowerPoint</li>
+      <li>HTML, CSS (Beginner)</li>
+      <li>Food Processing Knowledge</li>
+    </ul>
 
-    <div class="internship-box">
-      <h3>Keventer Agro Limited</h3>
-      <p>
-        I have completed project training in <b>"Appy Fizz Section"</b> at 
-        <b>Keventer Agro Limited</b>.
-      </p>
-      <p><b>Duration:</b> 8th October 2025 - 25th October 2025</p>
-      <p>
-        During this training, I was found sincere, hardworking and well behaved.
-        I learned about industrial food manufacturing processes.
-      </p>
-
-      <a href="internship.jpg" target="_blank" class="btn">View Internship Certificate</a>
-    </div>
+    <h3>Internship</h3>
+    <p>
+      Completed project training at <b>Keventer Agro Limited</b> in 
+      <b>Appy Fizz Section</b> (8 Oct 2025 - 25 Oct 2025).
+    </p>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact" class="section">
-    <h2>Contact Me</h2>
-
-    <div class="contact-box">
-      <p><b>Email:</b> <a href="mailto:arijitprosad99@gmail.com">arijitprosad99@gmail.com</a></p>
-
-      <p><b>Instagram:</b> 
-        <a href="https://www.instagram.com/arijitprosad?igsh=dzFqZnRmZW9kY25p" target="_blank">
-          @arijitprosad
-        </a>
-      </p>
-
-      <p><b>Phone:</b> +91 8653135381</p>
-
-      <p><b>Address:</b> Sarkarpara, Bulbulchandi, Habibpur, Malda - 732122</p>
-    </div>
+    <h2>Contact</h2>
+    <p><b>Email:</b> arijitprosad99@gmail.com</p>
+    <p><b>Phone:</b> +91 8653135381</p>
+    <p><b>Instagram:</b> 
+      <a href="https://www.instagram.com/arijitprosad?igsh=dzFqZnRmZW9kY25p" target="_blank">
+        @arijitprosad
+      </a>
+    </p>
+    <p><b>Address:</b> Sarkarpara, Bulbulchandi, Habibpur, Malda - 732122</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Arijit Prosad | Personal Portfolio Website</p>
+    <p>© 2026 Arijit Prosad | CV Website</p>
   </footer>
 
 </body>

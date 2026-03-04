@@ -1,217 +1,313 @@
-<html lang="en">    
-<head>    
-<meta charset="UTF-8">    
-<meta name="viewport" content="width=device-width, initial-scale=1.0">    
-<title>Arijit Prosad | Portfolio</title>    
-<link rel="stylesheet" href="style.css">    
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">    
-</head>    
+<!DOCTYPE html>
+<html lang="en">      
+<head>      
+<meta charset="UTF-8">      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">      
+<title>Arijit Prosad | Portfolio</title>      
+<link rel="stylesheet" href="style.css">      
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">      
 
-<body>    
-<header class="hero">    
-    <img src="arijit.jpg" alt="Arijit Prosad">    
-    <h1>Arijit Prosad</h1>    
-    <p><span class="typing"></span></p>    
-    <a href="Arijit_Prosad_CV.pdf" class="btn" download>Download CV</a>    
-</header>    
+<style>
+/* ---------------- BACKGROUND IMAGE + GALAXY EFFECT ---------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: url("background.jpg"),
+              linear-gradient(135deg, #0a0914, #1a0f33, #2b1b69, #142c57);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
 
-<nav>    
-    <a href="#about">About</a>    
-    <a href="#education">Education</a>    
-    <a href="#technical">Technical</a>    
-    <a href="#certificates">Certificates</a>
-    <a href="#publications">Publications</a>    
-    <a href="#contact">Contact</a>    
-</nav>    
+  animation: galaxyShift 18s ease-in-out infinite;
+  background-size: 500% 500%;
+  color: #fff;
+}
 
-<!-- ABOUT -->    
-<section id="about" class="fade">    
-    <h2>About Me</h2>    
-    <div class="card">    
-        <p>    
-            I am Arijit Prosad, a 2nd Year student of  
-            <b>Diploma in Food Processing & Technology</b> at Malda Polytechnic.  
-            I aim to build a strong career in the field of Food Technology and  
-            constantly upgrade my skills through learning and industrial training.    
-        </p>    
-    </div>    
-</section>    
+@keyframes galaxyShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-<!-- EDUCATION -->    
-<section id="education" class="fade">    
-    <h2>Education</h2>    
+/* GENERAL */
+section { padding: 50px 20px; }
+h2 { text-align: center; margin-bottom: 20px; }
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  max-width: 800px;
+}
 
-<div class="card">    
-    <h3>Higher Secondary (2024)</h3>    
-    <p>W.B.C.H.S.E | 81.2%</p>    
-</div>    
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+.hero img {
+  width: 150px;
+  border-radius: 50%;
+}
 
-<div class="card">    
-    <h3>Secondary (2022)</h3>    
-    <p>W.B.B.S.E | 40.1%</p>    
-</div>
+/* BUTTON STYLE */
+.btn {
+  display: inline-block;
+  background: #6a5af9;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 8px 5px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #4834d4;
+}
 
-</section>    
+/* FADE ANIMATION */
+.fade { opacity: 0; transition: opacity 1s ease; }
+.fade.show { opacity: 1; }
 
-<!-- TECHNICAL -->    
-<section id="technical" class="fade">    
-    <h2>Technical Qualification</h2>    
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+nav a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover { color: #a29bfe; }
 
-<div class="card">    
-    <h3>Diploma in Food Processing Technology</h3>    
-    <p>Malda Polytechnic</p>    
-    <p>2nd Year | GPA: 4.6</p>    
-    <p>Expected Year of Completion: 2027</p>    
-</div>    
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 50px;
+}
+</style>
 
-<div class="card">    
-    <h3>Industrial Training</h3>    
-    <p>Keventer Agro Limited</p>    
-    <p>Training Successfully Completed</p>    
-</div>
+</head>      
 
-</section>    
+<body>      
 
-<!-- CERTIFICATES -->    
-<section id="certificates" class="fade">    
-    <h2>Certificates</h2>    
+<!-- HERO -->
+<header class="hero">      
+    <img src="arijit.jpg" alt="Arijit Prosad">      
+    <h1>Arijit Prosad</h1>      
+    <p><span class="typing"></span></p>      
+    <a href="Arijit_Prosad_CV.pdf" class="btn" download>Download CV</a>      
+</header>      
 
-<div class="card">    
-    <h3>Keventer Industrial Training Certificate</h3>    
-    <a href="Keventer_Certificate.jpg" class="btn" target="_blank">View Certificate</a>    
-</div>    
+<!-- NAVBAR -->
+<nav>      
+    <a href="#about">About</a>      
+    <a href="#education">Education</a>      
+    <a href="#technical">Technical</a>      
+    <a href="#certificates">Certificates</a>  
+    <a href="#publications">Publications</a>      
+    <a href="#contact">Contact</a>      
+</nav>      
 
-<div class="card">    
-    <h3>Computer Course Certificate</h3>    
-    <a href="Computer_Course_Certificate.pdf" class="btn" target="_blank">View Certificate</a>    
-</div>
+<!-- ABOUT -->      
+<section id="about" class="fade">      
+    <h2>About Me</h2>      
+    <div class="card">      
+        <p>
+            I am Arijit Prosad, a 2nd Year student of    
+            <b>Diploma in Food Processing & Technology</b> at Malda Polytechnic.    
+            I aim to build a strong career in the field of Food Technology and    
+            constantly upgrade my skills through learning and industrial training.      
+        </p>      
+    </div>      
+</section>      
 
-</section>    
+<!-- EDUCATION -->      
+<section id="education" class="fade">      
+    <h2>Education</h2>      
+    <div class="card">      
+        <h3>Higher Secondary (2024)</h3>      
+        <p>W.B.C.H.S.E | 81.2%</p>      
+    </div>      
 
+    <div class="card">      
+        <h3>Secondary (2022)</h3>      
+        <p>W.B.B.S.E | 40.1%</p>      
+    </div>  
+</section>      
 
-<!-- ⚡ NEW PUBLICATIONS SECTION ADDED HERE -->    
-<section id="publications" class="fade">    
-    <h2>Publications & Books</h2>    
-    
+<!-- TECHNICAL -->      
+<section id="technical" class="fade">      
+    <h2>Technical Qualification</h2>      
+
+    <div class="card">      
+        <h3>Diploma in Food Processing Technology</h3>      
+        <p>Malda Polytechnic</p>      
+        <p>2nd Year | GPA: 4.6</p>      
+        <p>Expected Year of Completion: 2027</p>      
+    </div>      
+
+    <div class="card">      
+        <h3>Industrial Training</h3>      
+        <p>Keventer Agro Limited</p>      
+        <p>Training Successfully Completed</p>      
+    </div>      
+
+</section>      
+
+<!-- CERTIFICATES -->      
+<section id="certificates" class="fade">      
+    <h2>Certificates</h2>      
+
+    <div class="card">      
+        <h3>Keventer Industrial Training Certificate</h3>      
+        <a href="Keventer_Certificate.jpg" class="btn" target="_blank">View Certificate</a>      
+    </div>      
+
+    <div class="card">      
+        <h3>Computer Course Certificate</h3>      
+        <a href="Computer_Course_Certificate.pdf" class="btn" target="_blank">View Certificate</a>      
+    </div>
+
+</section>      
+
+<!-- PUBLICATIONS -->    
+<section id="publications" class="fade">      
+    <h2>Publications & Books</h2>      
 
     <h3>A. Textbooks / Reference Books / Monographs</h3>
     <div class="card">
-        <p><a href="https://www.cambridge.org/core/books/export-quality-and-income-distribution/79E5DB40DCC308005A71297D62DB5FB1" target="_blank">Export Quality and Income Distribution – Cambridge</a></p>
+        <a href="https://www.cambridge.org/core/books/export-quality-and-income-distribution/79E5DB40DCC308005A71297D62DB5FB1" 
+           class="btn" target="_blank">Cambridge Publication</a>
 
-        <p><a href="https://india.oup.com/product/international-economics-an-introduction-to-theory-and-policy-9780192865144/" target="_blank">International Economics: An Introduction to Theory and Policy – Oxford University Press</a></p>
+        <a href="https://india.oup.com/product/international-economics-an-introduction-to-theory-and-policy-9780192865144/"
+           class="btn" target="_blank">Oxford University Press</a>
     </div>
-
 
     <h3>B. Edited Books</h3>
     <div class="card">
-        <p><a href="https://link.springer.com/book/10.1007/978-81-322-1151-8" target="_blank">Springer Edited Book</a></p>
+        <a href="https://link.springer.com/book/10.1007/978-81-322-1151-8"
+           class="btn" target="_blank">Springer Edited Book</a>
 
-        <p><a href="https://www.econbiz.de/Record/essays-on-international-trade-theory-and-policy-for-the-developing-economies-acharyya-rajat/10003526874" target="_blank">Essays on International Trade Theory and Policy – EconBiz</a></p>
+        <a href="https://www.econbiz.de/Record/essays-on-international-trade-theory-and-policy-for-the-developing-economies-acharyya-rajat/10003526874"
+           class="btn" target="_blank">EconBiz Edited Book</a>
     </div>
-
 
     <h3>C. Journal Publications</h3>
     <div class="card">
-        <p><a href="https://ideas.repec.org/a/bla/buecrs/v66y2014is1ps74-s91.html" target="_blank">Business Economics Research Article – REPEC</a></p>
-        <p><a href="https://scholar.google.com/citations?user=FfMMCugAAAAJ&hl=en" target="_blank">Google Scholar Profile</a></p>
-    </div>
+        <a href="https://ideas.repec.org/a/bla/buecrs/v66y2014is1ps74-s91.html"
+           class="btn" target="_blank">Business Economics – REPEC</a>
 
+        <a href="https://scholar.google.com/citations?user=FfMMCugAAAAJ&hl=en"
+           class="btn" target="_blank">Google Scholar Profile</a>
+    </div>
 
     <h3>D. Other Publications</h3>
     <div class="card">
-        <p><a href="https://www.cambridge.org/core/journals/environment-and-development-economics/article/abs/environmental-standard-and-employment-impact-of-productivity-effect/ABEE157A07D662D539DFD3FDD1A25BB0" target="_blank">Environmental Standard & Employment Impact – Cambridge Journal</a></p>
+        <a href="https://www.cambridge.org/core/journals/environment-and-development-economics/article/abs/environmental-standard-and-employment-impact-of-productivity-effect/ABEE157A07D662D539DFD3FDD1A25BB0"
+           class="btn" target="_blank">Environmental Standard – Cambridge</a>
     </div>
-
 
     <h3>E. Working Papers</h3>
     <div class="card">
-        <p><a href="https://www.ilo.org/ilo-employment-policy-job-creation-livelihoods-department/areas-work/trade-and-employment" target="_blank">ILO Working Papers – Trade & Employment</a></p>
-        <p><a href="https://www.worldbank.org/en/programs/south-asia-regional-integration/trade" target="_blank">World Bank – Trade Program</a></p>
-    </div>
+        <a href="https://www.ilo.org/ilo-employment-policy-job-creation-livelihoods-department/areas-work/trade-and-employment"
+           class="btn" target="_blank">ILO Working Papers</a>
 
+        <a href="https://www.worldbank.org/en/programs/south-asia-regional-integration/trade"
+           class="btn" target="_blank">World Bank Trade Program</a>
+    </div>
 
     <h3>F. Popular Articles</h3>
     <div class="card">
-        <p><a href="https://www.jstor.org/stable/4399580" target="_blank">JSTOR Popular Article</a></p>
-        <p><a href="https://www.academia.edu/83534772/Central_bank_equity_facts_and_analytics" target="_blank">Central Bank Equity – Academia.edu</a></p>
+        <a href="https://www.jstor.org/stable/4399580"
+           class="btn" target="_blank">JSTOR Article</a>
+
+        <a href="https://www.academia.edu/83534772/Central_bank_equity_facts_and_analytics"
+           class="btn" target="_blank">Academia Article</a>
     </div>
 
-</section>    
-<!-- END PUBLICATIONS SECTION -->
+</section>      
 
+<!-- CONTACT -->      
+<section id="contact" class="fade">      
+    <h2>Contact</h2>      
 
-<!-- CONTACT -->    
-<section id="contact" class="fade">    
-    <h2>Contact</h2>    
+    <div class="card">      
+        <p>Email: <a href="mailto:arijtprosad99@gmail.com">arijtprosad99@gmail.com</a></p>      
+        <p>Mobile: 8653135381</p>      
 
-<div class="card">    
-    <p>Email: <a href="mailto:arijtprosad99@gmail.com">arijtprosad99@gmail.com</a></p>    
-    <p>Mobile: 8653135381</p>    
+        <div class="social">      
+            <a href="https://www.instagram.com/arijitprosad?igsh=dzFqZnRmZW9kY25p" target="_blank" class="btn">Instagram</a>
+        </div>      
+    </div>
 
-    <div class="social">    
-        <a href="https://www.instagram.com/arijitprosad?igsh=dzFqZnRmZW9kY25p" target="_blank">Instagram</a>    
-    </div>    
-</div>
+</section>      
 
-</section>    
+<footer>      
+    <p>© 2026 Arijit Prosad | All Rights Reserved</p>      
+</footer>      
 
-<footer>    
-    <p>© 2026 Arijit Prosad | All Rights Reserved</p>    
-</footer>    
+<!-- TYPING SCRIPT -->      
+<script>      
+const textArray = [      
+"Future Food Technologist",      
+"Diploma Student - Food Processing Technology",      
+"Industrial Training at Keventer",      
+"Passionate About Food Innovation"      
+];      
+      
+let typingElement = document.querySelector(".typing");      
+let textIndex = 0;      
+let charIndex = 0;      
+      
+function typeEffect() {      
+    if (charIndex < textArray[textIndex].length) {      
+        typingElement.textContent += textArray[textIndex].charAt(charIndex);      
+        charIndex++;      
+        setTimeout(typeEffect, 80);      
+    } else {      
+        setTimeout(eraseEffect, 1500);      
+    }      
+}      
+      
+function eraseEffect() {      
+    if (charIndex > 0) {      
+        typingElement.textContent = textArray[textIndex].substring(0, charIndex - 1);      
+        charIndex--;      
+        setTimeout(eraseEffect, 40);      
+    } else {      
+        textIndex++;      
+        if (textIndex >= textArray.length) textIndex = 0;      
+        setTimeout(typeEffect, 300);      
+    }      
+}      
+      
+document.addEventListener("DOMContentLoaded", function () {      
+    setTimeout(typeEffect, 500);      
+});      
+</script>      
 
-<!-- TYPING SCRIPT -->    
-<script>    
-const textArray = [    
-"Future Food Technologist",    
-"Diploma Student - Food Processing Technology",    
-"Industrial Training at Keventer",    
-"Passionate About Food Innovation"    
-];    
-    
-let typingElement = document.querySelector(".typing");    
-let textIndex = 0;    
-let charIndex = 0;    
-    
-function typeEffect() {    
-    if (charIndex < textArray[textIndex].length) {    
-        typingElement.textContent += textArray[textIndex].charAt(charIndex);    
-        charIndex++;    
-        setTimeout(typeEffect, 80);    
-    } else {    
-        setTimeout(eraseEffect, 1500);    
-    }    
-}    
-    
-function eraseEffect() {    
-    if (charIndex > 0) {    
-        typingElement.textContent = textArray[textIndex].substring(0, charIndex - 1);    
-        charIndex--;    
-        setTimeout(eraseEffect, 40);    
-    } else {    
-        textIndex++;    
-        if (textIndex >= textArray.length) textIndex = 0;    
-        setTimeout(typeEffect, 300);    
-    }    
-}    
-    
-document.addEventListener("DOMContentLoaded", function () {    
-    setTimeout(typeEffect, 500);    
-});    
-</script>    
+<!-- SCROLL FADE SCRIPT -->      
+<script>      
+const faders = document.querySelectorAll(".fade");      
+window.addEventListener("scroll", () => {      
+    faders.forEach(section => {      
+        const rect = section.getBoundingClientRect();      
+        if (rect.top < window.innerHeight - 100) {      
+            section.classList.add("show");      
+        }      
+    });      
+});      
+</script>      
 
-<!-- SCROLL SCRIPT -->    
-<script>    
-const faders = document.querySelectorAll(".fade");    
-    
-window.addEventListener("scroll", () => {    
-    faders.forEach(section => {    
-        const rect = section.getBoundingClientRect();    
-        if (rect.top < window.innerHeight - 100) {    
-            section.classList.add("show");    
-        }    
-    });    
-});    
-</script>    
-
-</body>    
+</body>      
         </html>
